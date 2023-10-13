@@ -14,8 +14,8 @@ export default function Home() {
       </div>
       <section>
         <div className="grid 2xl:grid-cols-4 xl:grid-cols-3 md:grid-cols-2 grid-cols-1 w-full gap-8 pt-14 px-10 sm:px-14 ">
-          {service.map((service) => (
-            <ServicesCard service={service} />
+          {service.map((service, id) => (
+            <ServicesCard service={service} key={id} />
           ))}
         </div>
       </section>
